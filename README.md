@@ -20,6 +20,7 @@ suppliers: Menyimpan data pemasok bunga
 orders: Menyimpan data pesanan pelanggan
 
 
+
 2. Koneksi Database (db.php)
    
 File db.php adalah komponen sentral yang menangani koneksi database dan digunakan oleh komponen-komponen lain untuk mengakses database.
@@ -36,6 +37,7 @@ Suppliers.php: Mengelola data pemasok
 Orders.php: Mengelola data pesanan
 
 
+
 4. Halaman View
    
 Setiap modul memiliki tiga halaman view:
@@ -47,6 +49,7 @@ create.php: Form untuk membuat entitas baru
 update.php: Form untuk memperbarui entitas yang ada
 
 
+
 5. Struktur UI
 
 index.php: Halaman utama aplikasi
@@ -56,7 +59,9 @@ header.php: Berisi elemen header yang konsisten di semua halaman
 footer.php: Berisi elemen footer yang konsisten di semua halaman
 
 
+
 ![TP7 drawio 1](https://github.com/user-attachments/assets/fb28bf3a-9ccf-4a2a-b18b-ea3a792a6a47)
+
 
 
 **Alur Program**
@@ -117,6 +122,7 @@ update.php memanggil kelas model terkait
 Model memperbarui data di database melalui db.php
 
 User diarahkan kembali ke halaman list.php
+
 
 
 
