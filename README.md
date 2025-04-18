@@ -3,7 +3,9 @@
 Saya Armelia Zahrah Mumtaz dengan NIM 2300801 berjanji mengerjakan TP7 DPBO dengan keberkahan-Nya, maka saya tidak akan melakukan kecurangan sesuai yang telah di spesifikasikan, Aamiin
 
 
+
 **Desain Program Toko Bunga**
+
 
 
 Komponen Utama:
@@ -17,9 +19,11 @@ suppliers: Menyimpan data pemasok bunga
 
 orders: Menyimpan data pesanan pelanggan
 
+
 2. Koneksi Database (db.php)
    
 File db.php adalah komponen sentral yang menangani koneksi database dan digunakan oleh komponen-komponen lain untuk mengakses database.
+
 
 3. Modul Utama
    
@@ -31,6 +35,7 @@ Suppliers.php: Mengelola data pemasok
 
 Orders.php: Mengelola data pesanan
 
+
 4. Halaman View
    
 Setiap modul memiliki tiga halaman view:
@@ -40,6 +45,7 @@ list.php: Menampilkan daftar entitas
 create.php: Form untuk membuat entitas baru
 
 update.php: Form untuk memperbarui entitas yang ada
+
 
 5. Struktur UI
 
@@ -51,6 +57,7 @@ footer.php: Berisi elemen footer yang konsisten di semua halaman
 
 
 ![TP7 drawio 1](https://github.com/user-attachments/assets/fb28bf3a-9ccf-4a2a-b18b-ea3a792a6a47)
+
 
 **Alur Program**
 
@@ -64,6 +71,7 @@ index.php memuat header.php dan footer.php untuk membuat layout konsisten
 index.php menyediakan navigasi ke ketiga modul utama (Flowers, Suppliers, Orders)
 
 
+
 2. Alur Melihat Data:
 
 User memilih salah satu modul (misalnya "View Flower")
@@ -75,6 +83,7 @@ list.php memanggil kelas model terkait (mis. Flowers.php)
 Model mengakses database melalui db.php untuk mengambil data
 
 Data ditampilkan dalam bentuk daftar/tabel
+
 
 
 3. Alur Menambah Data:
@@ -92,6 +101,7 @@ Model menyimpan data ke database melalui db.php
 User diarahkan kembali ke halaman list.php
 
 
+
 4. Alur Mengubah Data:
 
 User klik tombol "Edit" pada salah satu item di list.php
@@ -107,6 +117,7 @@ update.php memanggil kelas model terkait
 Model memperbarui data di database melalui db.php
 
 User diarahkan kembali ke halaman list.php
+
 
 
 Hubungan Antar Komponen:
